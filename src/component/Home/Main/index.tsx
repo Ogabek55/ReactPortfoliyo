@@ -3,13 +3,17 @@ import Button from '@mui/material/Button';
 import MainImgPerson from "./images/MainImgPerson.png";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Footer from '../Footer';
+import { CaseStudies } from './main';
+import { Container, Typography } from '@mui/material';
 
 type Props = {}
 
 const Main = (props: Props) => {
   return (
-    <div className='container'>
-    <main>
+    <>
+    <Container maxWidth="xl">
+    <section className='section_informatiion0'>
+    <main className='main'>
         <div className='Main_text'>
             <h1 className='Main_text_h1' >Your Name Here</h1>
             <p className='Main_text_p'> Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -21,16 +25,42 @@ const Main = (props: Props) => {
             }}>
            Let’s get started <ChevronRightIcon/>
             </Button>
-            
-                <p className='Main_div_p'>Worked with</p>
-        
+               <p className='Main_div_p'>Worked with</p>
         </div>
         <div className='Main_img'>
             <img src={MainImgPerson} alt="" />
         </div>
         </main>
+        <Footer/>
+   </section>
+    </Container>
+   <main className='section_informatsion1_main'>
+        <section className='section_informatsion1'>
+        <Container>
+             <CaseStudies>
+              Case Studies</CaseStudies>
+              <Typography variant='overline' sx={{
+                display:"flex",
+                justifyContent:"center",
+                maxWidth:"547px",
+                fontSize: "14px",
+                color: "#9C9C9C",
+                textAlign: "center", 
+                fontWeight: "bold",
+                lineHeight: "24px",
+                letterSpacing: "1px",
+                padding:"10px 0px 0px 0px",
+              }}>
+              Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Typography>
+        </Container>
+       </section>
+      </main>
    
-    </div>
+  
+  
+    </>
+  
   )
 }
 

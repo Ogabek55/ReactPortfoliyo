@@ -13,8 +13,8 @@ const Footer = (props: Props) => {
         width:"160px",
         height:"60px",
         backgroundColor:"black",
-        color:"#1B1B1B",
-        border:"1px solid #1B1B1B",
+        color:"#353434",
+        border:"2px solid #353434",
         fontWeight:"900"
         
 
@@ -25,8 +25,8 @@ const Footer = (props: Props) => {
         width:"160px",
         height:"60px",
         backgroundColor:"black",
-        color:"#1B1B1B",
-        border:"1px solid #1B1B1B",
+        color:"#353434",
+        border:"2px solid #353434",
         fontWeight:"900"
 
     }}>
@@ -36,8 +36,8 @@ const Footer = (props: Props) => {
         width:"160px",
         height:"60px",
         backgroundColor:"black",
-        color:"#1B1B1B",
-        border:"1px solid #1B1B1B",
+        color:"#353434",
+        border:"2px solid #353434",
         fontWeight:"900"
 
     }}>
@@ -47,8 +47,8 @@ const Footer = (props: Props) => {
         width:"160px",
         height:"60px",
         backgroundColor:"black",
-        color:"#1B1B1B",
-        border:"1px solid #1B1B1B",
+        color:"#353434",
+        border:"2px solid #353434",
         fontWeight:"900"
 
     }}>
@@ -58,8 +58,8 @@ const Footer = (props: Props) => {
         width:"160px",
         height:"60px",
         backgroundColor:"black",
-        color:"#1B1B1B",
-        border:"1px solid #1B1B1B",
+        color:"#353434",
+        border:"2px solid #353434",
         fontWeight:"900"
 
     }}>
