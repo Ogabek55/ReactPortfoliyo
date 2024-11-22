@@ -50,9 +50,36 @@ const Main = (props: Props) => {
                 lineHeight: "24px",
                 letterSpacing: "1px",
                 padding:"10px 0px 0px 0px",
+                margin:"0 auto"
               }}>
               Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Typography>
+              <div className='information_fintech'>
+                <div>
+                <Button variant="contained" sx={{
+                background:"#FFF6E9",
+                width:"72px",
+                height:"27px",
+                marginTop:"30px",
+                color:"#FFA217",
+                fontSize:"12px",
+                fontWeight:"bold",
+                borderRadius:"27px"
+            }}>
+           Fintech
+                </Button>
+                <h1 className='information_fintech_h1'>Work name here</h1>
+                <p className='information_fintech_p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <Button variant="contained" sx={{
+                background:"#FFA217",
+                width:"195px",
+                height:"38px",
+                
+            }}>
+           View case study<ChevronRightIcon/>
+            </Button>
+              </div>
         </Container>
        </section>
       </main>
