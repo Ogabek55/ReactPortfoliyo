@@ -3,8 +3,15 @@ import Button from '@mui/material/Button';
 import MainImgPerson from "./images/MainImgPerson.png";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Footer from '../Footer';
+import  Information_fintech_img from './images/Information_fintech_img.png';
+import  Information_fintech_img1 from './images/Information_fintech_img1.png';
+import  Information_fintech_img2 from './images/Information_fintech_img2.png';
 import { CaseStudies } from './main';
 import { Container, Typography } from '@mui/material';
+import CartComponent  from "../CartComponent";
+import CompyuterImg1 from "./images/CompyuterImg1.png";
+import CompyuterImg2 from "./images/CompyuterImg2.png";
+
 
 type Props = {}
 
@@ -54,8 +61,9 @@ const Main = (props: Props) => {
               }}>
               Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Typography>
+              <div className='information'>
               <div className='information_fintech'>
-                <div>
+                <div className='information_fintech_text'>
                 <Button variant="contained" sx={{
                 background:"#FFF6E9",
                 width:"72px",
@@ -64,24 +72,209 @@ const Main = (props: Props) => {
                 color:"#FFA217",
                 fontSize:"12px",
                 fontWeight:"bold",
-                borderRadius:"27px"
+                borderRadius:"27px",
+                marginLeft:"10px"
             }}>
-           Fintech
+                      Fintech
                 </Button>
-                <h1 className='information_fintech_h1'>Work name here</h1>
-                <p className='information_fintech_p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                </div>
+                <Typography sx={{
+                  fontSize:"24px",
+                  fontWeight:"bold",
+                  fontFamily:"Raleway",
+                  padding:"10px"
+
+                }}>
+                    Work name here
+                 </Typography>
+                <Typography sx={{
+                  width:"421px",
+                  fontSize:"14px",
+                  color:"#9C9C9C",
+                  fontFamily:"Raleway",
+                  lineHeight:"24px",
+                  padding:"10px"
+                }} >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+                </Typography>
+               
                 <Button variant="contained" sx={{
                 background:"#FFA217",
                 width:"195px",
                 height:"38px",
+                padding:"10px"
                 
             }}>
            View case study<ChevronRightIcon/>
-            </Button>
+                   </Button> 
+                </div>
+                <div className='information_fintech_img'>
+                  <img src={Information_fintech_img} alt="" />
+                </div>
               </div>
+              <div className='information_fintech'>
+              <div className='information_fintech_img'>
+                  <img src={Information_fintech_img1} alt="" />
+                </div>
+                <div className='information_fintech_text'>
+                <Button variant="contained" sx={{
+                background:"#D0E6FF",
+                width:"72px",
+                height:"27px",
+                marginTop:"30px",
+                color:"#000AFF",
+                fontSize:"12px",
+                fontWeight:"bold",
+                borderRadius:"27px",
+                marginLeft:"10px"
+            }}>
+                      Fintech
+                </Button>
+                  <Typography sx={{
+                    width:"421px",
+                    fontSize:"14px",
+                    color:"#9C9C9C",
+                    fontFamily:"Raleway",
+                    lineHeight:"24px",
+                    padding:"10px"
+                  }} >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+                  </Typography>
+                <Typography sx={{
+                  fontSize:"24px",
+                  fontWeight:"bold",
+                  fontFamily:"Raleway",
+                  padding:"10px"
+
+                }}>
+                    Work name here
+                 </Typography>
+                <Button variant="contained" sx={{
+                background:"#000AFF",
+                width:"195px",
+                height:"38px",
+                padding:"10px"
+                
+            }}>
+           View case study<ChevronRightIcon/>
+                   </Button> 
+                </div>
+                
+              </div>
+              <div className='information_fintech'>
+                <div className='information_fintech_text'>
+                <Button variant="contained" sx={{
+                background:"#E0FFF8",
+                width:"72px",
+                height:"27px",
+                marginTop:"30px",
+                color:"#2AB090",
+                fontSize:"12px",
+                fontWeight:"bold",
+                borderRadius:"27px",
+                marginLeft:"10px"
+            }}>
+                      Fintech
+                </Button>
+                <Typography sx={{
+                  fontSize:"24px",
+                  fontWeight:"bold",
+                  fontFamily:"Raleway",
+                  padding:"10px"
+
+                }}>
+                    Work name here
+                 </Typography>
+                <Typography sx={{
+                  width:"421px",
+                  fontSize:"14px",
+                  color:"#9C9C9C",
+                  fontFamily:"Raleway",
+                  lineHeight:"24px",
+                  padding:"10px"
+                }} >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+                </Typography>
+               
+                <Button variant="contained" sx={{
+                background:"#2AB090",
+                width:"195px",
+                height:"38px",
+                padding:"10px"
+                
+            }}>
+           View case study<ChevronRightIcon/>
+                   </Button> 
+                </div>
+                <div className='information_fintech_img'>
+                  <img className='information_fintech_img2' src={Information_fintech_img2}  alt="" />
+                </div>
+              </div></div>
         </Container>
        </section>
+       <Container>
+       <div className='Testimonials_information'>
+       <Typography variant='h3' sx={{
+        display:"flex",
+        justifyContent:"center",
+        color:'white',
+        padding:"130px 0px 0px 0px"
+       }}>Testimonials</Typography>
+       <Typography variant='subtitle2' sx={{
+        display:"flex",
+        justifyContent:"center",
+        color:'#9C9C9C',
+        padding:"10px 0px 0px 0px",
+        lineHeight:"24px",
+        letterSpacing:"1px"   
+        }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua. </Typography>
+        <div className='Testimonials_information_carts'>
+          <CartComponent/>
+          <CartComponent/>
+          <CartComponent/>
+          <CartComponent/>
+        </div>
+        </div></Container>
+        <section className='section_informatsion1'>
+          <Container>
+           <Typography variant='h5' sx={{
+             display:"flex",
+             justifyContent:"center",
+             padding:"80px 0px 0px 0px",
+             fontSize:"34px",
+             fontWeight:"bold"
+               }}>Recent Work</Typography>
+          <Typography variant="subtitle1" sx={{
+             display:"flex",
+           justifyContent:"center",
+           color:"#9C9C9C",
+           lineHeight:"24px"
+           }}>Solvinguser & business problems since last 15+ years. <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua. </Typography>
+
+            <div className='carts'>
+              <div className='carts1'>
+              <img src={CompyuterImg1} alt="" />
+              <Typography variant='h5' sx={{
+                fontWeight:"bold",
+                fontSize:"24px"
+              }}>Work name here</Typography>
+              <Typography variant='subtitle2' sx={{
+                color:"#9C9C9C",
+                lineHeight:"24px"
+              }}>Labore et dolore magna aliqua. sed do eiusmod <br /> tempor incididunt ut labore et dolore magna.</Typography>
+               <Button variant="contained" sx={{
+                background:"#62BA1B",
+                width:"139px",
+                height:"38px",
+                marginTop:"30px"
+            }}>
+           Let’s get started <ChevronRightIcon/>
+            </Button>
+              </div>
+
+            </div>
+
+          </Container>
+        </section>
       </main>
    
   
