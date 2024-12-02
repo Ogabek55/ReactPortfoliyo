@@ -11,3 +11,7 @@ export const CaseStudies = styled.h1`
     padding: 80px 0px 0px 0px;
  `
 
+export const MediaQueries =styled.div`
+
+
+`
