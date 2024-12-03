@@ -11,6 +11,8 @@ import { Container, Typography } from '@mui/material';
 import CartComponent  from "../CartComponent";
 import CompyuterImg1 from "./images/CompyuterImg1.png";
 import CompyuterImg2 from "./images/CompyuterImg2.png";
+import FloatingActionButtons from "../Add";
+
 
 
 type Props = {}
@@ -275,7 +277,7 @@ const Main = (props: Props) => {
                </Button>
           </div>
               <div className='carts1'>
-              <img src={CompyuterImg1} alt="" />
+              <img src={CompyuterImg2} alt="" />
               <Typography variant='h5' sx={{
                 fontSize:"24px",
               }}>Work name here</Typography>
@@ -320,7 +322,7 @@ const Main = (props: Props) => {
                color:"white",
                padding:"40px 0px 0px 0px"
               }}>Email</Typography>
-              <input className='footer_from_input' type="email" placeholder='Please enter your email' />
+              <input className='footer_from_input' id='footer_from_input' type="email" placeholder='Please enter your email' />
               <Typography sx={{
                fontFamily:"Raleway",
                fontSize:"12px",
@@ -354,8 +356,8 @@ const Main = (props: Props) => {
           </Container>
         </footer>
       </main>
-   
-  
+      
+  <FloatingActionButtons/>
       </MediaQueries>
     </>
   
