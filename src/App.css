@@ -36,6 +36,7 @@ header {
   color: #9c9c9c;
   background-color: #1b1b1b;
   border-radius: 0px 0px 8px 8px;
+  height: auto;
 }
 .header_imgs {
   display: flex;
@@ -142,6 +143,32 @@ footer {
   background-color: #f8f8f8;
   border-radius: 4px;
 }
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3; /* Orqa fon rangi */
+  border-top: 4px solid #3498db; /* Spinner rangi */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* aylanish animatsiyasi */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1013px) {
   .information_fintech {
     display: block;
@@ -152,6 +179,12 @@ footer {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 962px) {
+  .carts {
+    display: block;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 791px) {
   .header_imgs {
     display: none;
@@ -160,13 +193,33 @@ footer {
     width: 100%;
   }
 }
+@media screen and (max-width: 732px) {
+  .header_button_contained3 {
+    display: none;
+  }
+}
 @media screen and (max-width: 633px) {
   .header_get {
     display: none;
+  }
+  .Testimonials_information_carts {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }
 @media screen and (max-width: 491px) {
   .header_recent {
     display: none;
+  }
+  .information_fintech_img2,
+  .Information_fintech_img1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .carts1_img,
+  .information_fintech_img1 {
+    width: 100%;
   }
 }

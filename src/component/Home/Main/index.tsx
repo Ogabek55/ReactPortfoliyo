@@ -6,21 +6,21 @@ import Footerr from '../Footer/';
 import  Information_fintech_img from './images/Information_fintech_img.png';
 import  Information_fintech_img1 from './images/Information_fintech_img1.png';
 import  Information_fintech_img2 from './images/Information_fintech_img2.png';
-import { CaseStudies, MediaQueries } from './main';
+import { CaseStudies} from './main';
 import { Container, Typography } from '@mui/material';
 import CartComponent  from "../CartComponent";
 import CompyuterImg1 from "./images/CompyuterImg1.png";
 import CompyuterImg2 from "./images/CompyuterImg2.png";
 import FloatingActionButtons from "../Add";
+import Form from "../Form";
+
 
 
 
 type Props = {}
-
 const Main = (props: Props) => {
   return (
     <>
-   <MediaQueries>
     <Container maxWidth="xl">
     <section className='section_informatiion0'>
     <main className='main'>
@@ -90,7 +90,7 @@ const Main = (props: Props) => {
                     Work name here
                  </Typography>
                 <Typography className='information_fintech_text_typography' sx={{
-                  width:"421px",
+                  maxWidth:"421px",
                   fontSize:"14px",
                   color:"#9C9C9C",
                   fontFamily:"Raleway",
@@ -112,12 +112,12 @@ const Main = (props: Props) => {
                    </Button> 
                 </div>
                 <div className='information_fintech_img'>
-                  <img src={Information_fintech_img} alt="" />
+                  <img className='Information_fintech_img1' src={Information_fintech_img} alt="" />
                 </div>
               </div>
               <div className='information_fintech'>
               <div className='information_fintech_img'>
-                  <img src={Information_fintech_img1} alt="" />
+                  <img className='Information_fintech_img1' src={Information_fintech_img1} alt="" />
                 </div>
                 <div className='information_fintech_text'>
                 <Button variant="contained" sx={{
@@ -134,7 +134,7 @@ const Main = (props: Props) => {
                       Fintech
                 </Button>
                   <Typography className='information_fintech_text_typography' sx={{
-                    width:"421px",
+                    maxWidth:"421px",
                     fontSize:"14px",
                     color:"#9C9C9C",
                     fontFamily:"Raleway",
@@ -189,7 +189,7 @@ const Main = (props: Props) => {
                     Work name here
                  </Typography>
                 <Typography className='information_fintech_text_typography' sx={{
-                  width:"421px",
+                    maxWidth:"421px",
                   fontSize:"14px",
                   color:"#9C9C9C",
                   fontFamily:"Raleway",
@@ -256,15 +256,16 @@ const Main = (props: Props) => {
 
             <div className='carts'>
               <div className='carts1'>
-              <img src={CompyuterImg1} alt="" />
+              <img className='carts1_img' src={CompyuterImg1} alt="" />
               <Typography variant='h5' sx={{
                 fontWeight:"bold",
                 fontSize:"24px"
               }}>Work name here</Typography>
               <Typography variant='subtitle2' sx={{
+             
                 color:"#9C9C9C",
                 lineHeight:"24px",
-                 padding:"20px 0px"
+                padding:"20px 0px"
               }}>Labore et dolore magna aliqua. sed do eiusmod <br /> tempor incididunt ut labore et dolore magna.</Typography>
                <Button variant="contained" sx={{
                 background:"#62BA1B",
@@ -277,7 +278,7 @@ const Main = (props: Props) => {
                </Button>
           </div>
               <div className='carts1'>
-              <img src={CompyuterImg2} alt="" />
+              <img className='carts1_img' src={CompyuterImg2} alt="" />
               <Typography variant='h5' sx={{
                 fontSize:"24px",
               }}>Work name here</Typography>
@@ -314,42 +315,10 @@ const Main = (props: Props) => {
               color:"#9C9C9C",
               lineHeight:"24px"
              }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua. </Typography>
-             
-             <form style={{textAlign:"center"}}>
-              <Typography sx={{
-               fontFamily:"Raleway",
-               fontSize:"12px",
-               color:"white",
-               padding:"40px 0px 0px 0px"
-              }}>Email</Typography>
-              <input className='footer_from_input' id='footer_from_input' type="email" placeholder='Please enter your email' />
-              <Typography sx={{
-               fontFamily:"Raleway",
-               fontSize:"12px",
-               color:"white",
-               padding:"40px 0px 0px 0px"
-              }}>Mobile</Typography>
-              <input className='footer_from_input' type="tel" placeholder='Enter mobile' />
-              <Typography sx={{
-               fontFamily:"Raleway",
-               fontSize:"12px",
-               color:"white",
-               padding:"40px 0px 0px 0px"
-              }}>Message</Typography>
-           <textarea className='footer_from_input_message' id="message" name="message" placeholder="Enter your message"></textarea>
-           <div>
-           <Button variant="contained" sx={{
-                background:"#3F8E00",
-                width:"350px",
-                height:"50px",
-                marginTop:"30px",
-                fontWeight:"bold",
-                borderRadius:"4px"
-                }}>
-               Submit <ChevronRightIcon/>
-               </Button>
-           </div>
-             </form>
+       <Form/>
+              </div>
+              <div>
+       
              
              </div>
             </div>
@@ -358,7 +327,7 @@ const Main = (props: Props) => {
       </main>
       
   <FloatingActionButtons/>
-      </MediaQueries>
+
     </>
   
   )

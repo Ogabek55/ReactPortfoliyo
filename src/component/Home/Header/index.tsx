@@ -17,7 +17,7 @@ const Header = (props: Props) => {
       <li className='header_studies'><a href="">Case Studies</a></li>
       <li className='header_testimonials'><a href="">Testimonials</a></li>
       <li className='header_recent'><a href="">Recent Work</a></li>
-      <li className='header_get'><a href="">Get In Touch</a></li>
+      <li className='header_get'><a href="#FormGetTouch">Get In Touch</a></li>
    <div className='header_imgs'>
     <div><a href="#"><img src={HeaderLinkedIn} alt="HeaderLinkedIn" /></a></div>
     <div><a href="#"><img src={Header_image2} alt="Header_image2" /></a></div>

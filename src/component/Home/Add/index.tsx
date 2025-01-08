@@ -24,9 +24,7 @@ export default function FloatingActionButtons() {
       <Fab color="primary" aria-label="add" onClick={handleAddClick}>
         <AddIcon />
       </Fab>
-      <Fab color="secondary" aria-label="edit" onClick={handleAddClick}>
-        <EditIcon />
-      </Fab>
+   
 
       </Content>
   
