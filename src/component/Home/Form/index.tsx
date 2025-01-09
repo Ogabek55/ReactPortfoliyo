@@ -70,7 +70,7 @@ const Main = () => {
         className="footer_from_input"
         ref={mobileRef}
         type="tel"
-        placeholder="Enter mobile"
+        placeholder="+1234567891010"
         required
       />
       <Typography sx={{ fontFamily: "Raleway", fontSize: "12px", color: "white", padding: "40px 0px 0px 0px" }}>

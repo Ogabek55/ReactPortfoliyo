@@ -1,9 +1,10 @@
 import React from 'react'
-import HeaderLinkedIn from "./Images/LinkedIn.png";
-import Header_image2 from "./Images/Header_image2.png";
-import HeaderTwitter from "./Images/Twitter.png";
+
 import { Container } from '@mui/material';
 import { Header_link } from './header';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram'
+import YouTubeIcon from '@mui/icons-material/YouTube';;
 
 type Props = {}
 
@@ -19,9 +20,9 @@ const Header = (props: Props) => {
       <li className='header_recent'><a href="">Recent Work</a></li>
       <li className='header_get'><a href="#FormGetTouch">Get In Touch</a></li>
    <div className='header_imgs'>
-    <div><a href="#"><img src={HeaderLinkedIn} alt="HeaderLinkedIn" /></a></div>
-    <div><a href="#"><img src={Header_image2} alt="Header_image2" /></a></div>
-    <div><a href="#"><img src={HeaderTwitter} alt="HeaderTwitter" /></a></div>
+    <div><a href="https://t.me/Shamshiyev_O"><TelegramIcon/></a></div>
+    <div><a href="https://www.youtube.com/channel/UC_ezZnLBpv3uf2qyoD5hgOA"><YouTubeIcon /></a></div>
+    <div><a href="https://www.instagram.com/shamshiyev_o"><InstagramIcon /></a></div>
    </div>
     </ul>
     </Header_link>
