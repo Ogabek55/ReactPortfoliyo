@@ -18,12 +18,7 @@ const Footer = (props: Props) => {
 <Button className='header_button_contained3' variant="contained" >
       PAYCHEX
     </Button>
-  <Button className='header_button_contained4' variant="contained" >
-      elastik
-    </Button>
-  <Button className='header_button_contained5' variant="contained" >
-      stripe
-    </Button>
+  
 </ClickUp>
    
     </footer>

@@ -20,9 +20,9 @@ const Header = (props: Props) => {
       <li className='header_recent'><a href="">Recent Work</a></li>
       <li className='header_get'><a href="#FormGetTouch">Get In Touch</a></li>
    <div className='header_imgs'>
-    <div><a href="https://t.me/Shamshiyev_O"><TelegramIcon/></a></div>
-    <div><a href="https://www.youtube.com/channel/UC_ezZnLBpv3uf2qyoD5hgOA"><YouTubeIcon /></a></div>
-    <div><a href="https://www.instagram.com/shamshiyev_o"><InstagramIcon /></a></div>
+    <div><a href="https://t.me/Shamshiyev_O" target='_blank'><TelegramIcon/></a></div>
+    <div><a href="https://www.youtube.com/channel/UC_ezZnLBpv3uf2qyoD5hgOA" target='_blank'><YouTubeIcon /></a></div>
+    <div><a href="https://www.instagram.com/shamshiyev_o" target='_blank'><InstagramIcon /></a></div>
    </div>
     </ul>
     </Header_link>

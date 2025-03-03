@@ -1,11 +1,10 @@
-import React from "react";
 import Button from "@mui/material/Button";
 import MainImgPerson from "./images/MyImg.jpg";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Footerr from "../Footer/";
-import Information_fintech_img from "./images/Information_fintech_img.png";
-import Information_fintech_img1 from "./images/Information_fintech_img1.png";
-import Information_fintech_img2 from "./images/Information_fintech_img2.png";
+import Information_fintech_img from "./images/myschool-img.jpg";
+import Information_fintech_img1 from "./images/Queezy-dashboard-img1.jpg";
+import Information_fintech_img2 from "./images/Queezy-dashboard-img2.jpg";
 import { CaseStudies, MAinText, MyImg } from "./main";
 import { Container, Typography } from "@mui/material";
 import CartComponent from "../CartComponent";
@@ -27,7 +26,9 @@ const Main = (props: Props) => {
                 <p className="Main_text_p">
                   {" "}
                   I am Shamshiyev Og'abek, born in 2005 in Bakhmal district of
-                  Jizzakh region. Currently, I am studying FrontEnd programming.
+                  Jizzakh region. Currently, I am studying FrontEnd
+                  programming.I really like this FrontEnd field. That's why I
+                  chose this direction.
                 </p>
                 <Button
                   variant="contained"
@@ -54,7 +55,7 @@ const Main = (props: Props) => {
       </Container>
       <main className="section_informatsion1_main">
         <section className="section_informatsion1">
-          <Container maxWidth="xl">
+          <Container maxWidth="lg">
             <CaseStudies>Case Studies</CaseStudies>
             <Typography
               variant="overline"
@@ -72,9 +73,9 @@ const Main = (props: Props) => {
                 margin: "0 auto",
               }}
             >
-              Solving user & business problems since last 15+ years.Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
+              I have spent the last 1+ years focusing on learning frontend
+              programming. During this time I have built the sites you see
+              below.
             </Typography>
             <div className="information">
               <div className="information_fintech">
@@ -103,7 +104,7 @@ const Main = (props: Props) => {
                       padding: "10px",
                     }}
                   >
-                    Work name here
+                    This is the MySchool website.
                   </Typography>
                   <Typography
                     className="information_fintech_text_typography"
@@ -116,10 +117,10 @@ const Main = (props: Props) => {
                       padding: "10px",
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. sed do eiusmod tempor incididunt ut labore et dolore
-                    magna.
+                    The purpose of this site is to further improve communication
+                    between students and teachers at the school. Electronic
+                    information about all qualified teachers at the school is
+                    stored here.
                   </Typography>
 
                   <Button
@@ -135,18 +136,21 @@ const Main = (props: Props) => {
                     <ChevronRightIcon />
                   </Button>
                 </div>
-                <div className="information_fintech_img">
+
+                <div className="information_fintech_imgs">
                   <img
-                    className="Information_fintech_img1"
+                    className="information_fintech_img"
+                    style={{ width: "445px", height: "320px" }}
                     src={Information_fintech_img}
                     alt=""
                   />
                 </div>
               </div>
               <div className="information_fintech">
-                <div className="information_fintech_img">
+                <div className="information_fintech_imgs">
                   <img
-                    className="Information_fintech_img1"
+                    style={{ width: "445px", height: "320px" }}
+                    className="information_fintech_img"
                     src={Information_fintech_img1}
                     alt=""
                   />
@@ -179,10 +183,10 @@ const Main = (props: Props) => {
                       padding: "10px",
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. sed do eiusmod tempor incididunt ut labore et dolore
-                    magna.
+                    The purpose of this site is to allow students to test their
+                    knowledge online for free. It aims to determine how well
+                    students are mastering the subjects. To access this site,
+                    you only need to register with a Google Email.
                   </Typography>
                   <Typography
                     sx={{
@@ -192,7 +196,7 @@ const Main = (props: Props) => {
                       padding: "10px",
                     }}
                   >
-                    Work name here
+                    Electronic exam website, i.e. Queezy-Dashboard
                   </Typography>
                   <Button
                     variant="contained"
@@ -234,7 +238,7 @@ const Main = (props: Props) => {
                       padding: "10px",
                     }}
                   >
-                    Work name here
+                    Electronic exam website, i.e. Queezy-Dashboard
                   </Typography>
                   <Typography
                     className="information_fintech_text_typography"
@@ -247,10 +251,9 @@ const Main = (props: Props) => {
                       padding: "10px",
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. sed do eiusmod tempor incididunt ut labore et dolore
-                    magna.
+                    Here, when a reader registers and logs in again, they can
+                    reset their forgotten password. I think this will allow for
+                    wider use of this site.
                   </Typography>
 
                   <Button
@@ -266,8 +269,9 @@ const Main = (props: Props) => {
                     <ChevronRightIcon />
                   </Button>
                 </div>
-                <div className="information_fintech_img">
+                <div className="information_fintech_imgs">
                   <img
+                    style={{ width: "445px", height: "512px" }}
                     className="information_fintech_img2"
                     src={Information_fintech_img2}
                     alt=""
@@ -348,6 +352,7 @@ const Main = (props: Props) => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "24px",
+                    marginTop:"10px"
                   }}
                 >
                   Work name here
@@ -355,9 +360,7 @@ const Main = (props: Props) => {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    color: "#9C9C9C",
-                    lineHeight: "24px",
-                    padding: "20px 0px",
+                    
                   }}
                 >
                   Labore et dolore magna aliqua. sed do eiusmod <br /> tempor
@@ -381,6 +384,7 @@ const Main = (props: Props) => {
                 <Typography
                   variant="h5"
                   sx={{
+                    fontWeight: "bold",
                     fontSize: "24px",
                   }}
                 >
@@ -431,10 +435,10 @@ const Main = (props: Props) => {
                   sx={{
                     color: "#9C9C9C",
                     lineHeight: "24px",
+                    textAlign:"center"
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do <br /> eiusmod tempor incididunt ut labore et dolore magna
+                  I want call is your mobile phone, Your answer is mine <br /> eiusmod tempor incididunt ut labore et dolore magna
                   aliqua.{" "}
                 </Typography>
                 <Form />
