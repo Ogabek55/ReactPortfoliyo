@@ -12,9 +12,10 @@ import CompyuterImg1 from "./images/CompyuterImg1.png";
 import CompyuterImg2 from "./images/CompyuterImg2.png";
 import FloatingActionButtons from "../Add";
 import Form from "../Form";
+import { forwardRef } from "react";
 
-type Props = {};
-const Main = (props: Props) => {
+
+const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
   return (
     <>
       <Container maxWidth="xl">
@@ -49,12 +50,13 @@ const Main = (props: Props) => {
                 <img className="Main_img_img" src={MainImgPerson} alt="" />
               </div>
             </MyImg>
+            
           </main>
           <Footerr />
         </section>
       </Container>
       <main className="section_informatsion1_main">
-        <section className="section_informatsion1">
+        <div ref={caseStudies} className="section_informatsion1">
           <Container maxWidth="lg">
             <CaseStudies>Case Studies</CaseStudies>
             <Typography
@@ -280,7 +282,7 @@ const Main = (props: Props) => {
               </div>
             </div>
           </Container>
-        </section>
+        </div>
         <Container>
           <div className="Testimonials_information">
             <Typography
@@ -316,7 +318,7 @@ const Main = (props: Props) => {
             </div>
           </div>
         </Container>
-        <section className="section_informatsion1">
+        <div  className="section_informatsion1">
           <Container>
             <Typography
               variant="h5"
@@ -352,7 +354,7 @@ const Main = (props: Props) => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "24px",
-                    marginTop:"10px"
+                    padding: "10px 0px",
                   }}
                 >
                   Work name here
@@ -360,7 +362,8 @@ const Main = (props: Props) => {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    
+                    color: "#9C9C9C",
+                    lineHeight: "24px",
                   }}
                 >
                   Labore et dolore magna aliqua. sed do eiusmod <br /> tempor
@@ -386,6 +389,7 @@ const Main = (props: Props) => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "24px",
+                    padding: "10px 0px",
                   }}
                 >
                   Work name here
@@ -394,7 +398,6 @@ const Main = (props: Props) => {
                   sx={{
                     color: "#9C9C9C",
                     lineHeight: "24px",
-                    padding: "20px 0px",
                   }}
                 >
                   Labore et dolore magna aliqua. sed do eiusmod <br /> tempor
@@ -407,6 +410,7 @@ const Main = (props: Props) => {
                     width: "150px",
                     height: "38px",
                     marginTop: "30px",
+                    padding: "10px",
                   }}
                 >
                   Know more <ChevronRightIcon />
@@ -414,7 +418,7 @@ const Main = (props: Props) => {
               </div>
             </div>
           </Container>
-        </section>
+        </div>
         <footer className="Testimonials_information_footer">
           <Container>
             <div className="footer">
@@ -435,11 +439,11 @@ const Main = (props: Props) => {
                   sx={{
                     color: "#9C9C9C",
                     lineHeight: "24px",
-                    textAlign:"center"
+                    textAlign: "center",
                   }}
                 >
-                  I want call is your mobile phone, Your answer is mine <br /> eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.{" "}
+                  I want call is your mobile phone, Your answer is mine <br />{" "}
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
                 </Typography>
                 <Form />
               </div>
@@ -449,9 +453,8 @@ const Main = (props: Props) => {
         </footer>
       </main>
 
-      <FloatingActionButtons />
+      <FloatingActionButtons  />
     </>
   );
-};
-
+});
 export default Main;

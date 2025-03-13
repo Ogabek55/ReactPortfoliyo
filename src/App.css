@@ -135,6 +135,14 @@ footer {
   background-color: #f8f8f8;
   border-radius: 4px;
 }
+#footer_from_input {
+  width: 350px;
+  height: 40px;
+  padding: 0px 12px;
+  color: #757575;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
 .carts1_img{
   border: 2px solid ;
   border-radius: 13px;
@@ -166,9 +174,7 @@ footer {
   height: 50px;
   animation: spin 2s linear infinite;
 }
-/* .information_fintech_text{
-  max-width:70%;
-} */
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -212,12 +218,7 @@ footer {
     display: none;
   }
 }
-@media screen and (max-width: 725px) {
-  .section_informatiion0 {
-    padding: 0px 0px 10px 0px;
-    margin-top: 20px;
-  }
-}
+
 @media screen and (max-width: 633px) {
   .header_get {
     display: none;
@@ -236,6 +237,12 @@ footer {
     text-align: center;
   }
 }
+/* @media screen and (max-width:590px) {
+  .main{
+    display: block;
+    margin: 0 auto;
+  }
+} */
 @media screen and (max-width: 478px) {
   .carts1_img,
   .information_fintech_img1 {
