@@ -12,17 +12,27 @@ import CompyuterImg1 from "./images/CompyuterImg1.png";
 import CompyuterImg2 from "./images/CompyuterImg2.png";
 import FloatingActionButtons from "../Add";
 import Form from "../Form";
-import { forwardRef } from "react";
+import { ForwardedRef, forwardRef, MutableRefObject } from "react";
+
+interface MainProps {
+  homeRef: MutableRefObject<HTMLDivElement | null>;
+  caseStudiesRef: MutableRefObject<HTMLDivElement | null>;
+  testimonialsRef: MutableRefObject<HTMLDivElement | null>;
+  recentWorkRef: MutableRefObject<HTMLDivElement | null>;
+  getInTouchRef: MutableRefObject<HTMLDivElement | null>;
+}
 
 
-const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
+const Main = forwardRef<HTMLDivElement | null, MainProps>(
+  ({ homeRef, caseStudiesRef, testimonialsRef, recentWorkRef, getInTouchRef }, ref) => {
   return (
     <>
+   
       <Container maxWidth="xl">
         <section className="section_informatiion0">
           <main className="main">
             <MAinText>
-              <div className="Main_text">
+              <div ref={homeRef} className="Main_text">
                 <h1 className="Main_text_h1">My name is Og'abek</h1>
                 <p className="Main_text_p">
                   {" "}
@@ -56,7 +66,7 @@ const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
         </section>
       </Container>
       <main className="section_informatsion1_main">
-        <div ref={caseStudies} className="section_informatsion1">
+        <div ref={caseStudiesRef} className="section_informatsion1">
           <Container maxWidth="lg">
             <CaseStudies>Case Studies</CaseStudies>
             <Typography
@@ -176,13 +186,15 @@ const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
                   </Button>
                   <Typography
                     className="information_fintech_text_typography"
+                    variant="h1"
                     sx={{
                       maxWidth: "421px",
                       fontSize: "14px",
-                      color: "#9C9C9C",
+                      color: "red",
                       fontFamily: "Raleway",
                       lineHeight: "24px",
                       padding: "10px",
+                      // textAlign: "center",
                     }}
                   >
                     The purpose of this site is to allow students to test their
@@ -284,7 +296,7 @@ const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
           </Container>
         </div>
         <Container>
-          <div className="Testimonials_information">
+          <div ref={testimonialsRef} className="Testimonials_information">
             <Typography
               variant="h3"
               sx={{
@@ -318,7 +330,7 @@ const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
             </div>
           </div>
         </Container>
-        <div  className="section_informatsion1">
+        <div  ref={recentWorkRef} className="section_informatsion1">
           <Container>
             <Typography
               variant="h5"
@@ -421,7 +433,7 @@ const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
         </div>
         <footer className="Testimonials_information_footer">
           <Container>
-            <div className="footer">
+            <div ref={getInTouchRef} className="footer">
               <div>
                 <Typography
                   variant="h1"
@@ -442,8 +454,8 @@ const Main = forwardRef<HTMLDivElement  | null>((props, caseStudies) => {
                     textAlign: "center",
                   }}
                 >
-                  I want call is your mobile phone, Your answer is mine <br />{" "}
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                  Those who wish to contact me should fill out the form below. <br />{" "}
+                  For suggestions and inquiries, please use the form below.{" "}
                 </Typography>
                 <Form />
               </div>

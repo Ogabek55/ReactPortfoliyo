@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 export const ClickUp = styled.div`
+gap: 20px;
 button{
        width: 160px;
        height: 60px;
@@ -9,5 +10,6 @@ button{
        opacity: 30%;
        margin: 30px;
        border: 1px solid #FFFFFF;
+
 }
 `

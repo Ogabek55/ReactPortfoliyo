@@ -22,13 +22,11 @@ export const MyImg = styled.div`
     display: block;
     width: 100%;
     height: auto;
-    transition:
-      transform 0.5s,
-      box-shadow 0.5s;
+    transition: 0ms.3s;
   }
   .Main_img_img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 50px #3F8E00;
   }
  
 `;

@@ -12,22 +12,22 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
   return (
     <Container maxWidth="xl">
-      <header>
         <Header_link>
+      <header>
           <ul>
-            <li className="header_home" onClick={() => scrollToContent("home")} style={{ cursor: "pointer" }}>
+            <li className="header_home" onClick={() => scrollToContent("home")} >
               Home
             </li>
-            <li className="header_studies" onClick={() => scrollToContent("caseStudies")} style={{ cursor: "pointer" }}>
+            <li className="header_studies" onClick={() => scrollToContent("caseStudies")} >
               Case Studies
             </li>
-            <li className="header_testimonials" onClick={() => scrollToContent("testimonials")} style={{ cursor: "pointer" }}>
+            <li className="header_testimonials" onClick={() => scrollToContent("testimonials")} >
               Testimonials
             </li>
-            <li className="header_recent" onClick={() => scrollToContent("recentWork")} style={{ cursor: "pointer" }}>
+            <li className="header_recent" onClick={() => scrollToContent("recentWork")} >
               Recent Work
             </li>
-            <li className="header_get" onClick={() => scrollToContent("getInTouch")} style={{ cursor: "pointer" }}>
+            <li className="header_get" onClick={() => scrollToContent("getInTouch")} >
               Get In Touch
             </li>
 
@@ -43,8 +43,8 @@ const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
               </a>
             </div>
           </ul>
-        </Header_link>
       </header>
+        </Header_link>
     </Container>
   );
 };

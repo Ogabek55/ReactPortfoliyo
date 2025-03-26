@@ -68,7 +68,7 @@ function TestimonialCard() {
             color:"#FFFFFF"
           }}
         >
-          Client Name
+          Elyor Tuyliyev
         </Typography>
       </Box>
     </Box>
