@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { Header_link } from "./header";
+import { HeaderLInk } from "./header";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -12,22 +12,34 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
   return (
     <Container maxWidth="xl">
-        <Header_link>
-      <header>
+      <HeaderLInk>
+        <header>
           <ul>
-            <li className="header_home" onClick={() => scrollToContent("home")} >
+            <li className="header_home" onClick={() => scrollToContent("home")}>
               Home
             </li>
-            <li className="header_studies" onClick={() => scrollToContent("caseStudies")} >
+            <li
+              className="header_studies"
+              onClick={() => scrollToContent("caseStudies")}
+            >
               Case Studies
             </li>
-            <li className="header_testimonials" onClick={() => scrollToContent("testimonials")} >
+            <li
+              className="header_testimonials"
+              onClick={() => scrollToContent("testimonials")}
+            >
               Testimonials
             </li>
-            <li className="header_recent" onClick={() => scrollToContent("recentWork")} >
+            <li
+              className="header_recent"
+              onClick={() => scrollToContent("recentWork")}
+            >
               Recent Work
             </li>
-            <li className="header_get" onClick={() => scrollToContent("getInTouch")} >
+            <li
+              className="header_get"
+              onClick={() => scrollToContent("getInTouch")}
+            >
               Get In Touch
             </li>
 
@@ -35,7 +47,10 @@ const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
               <a href="https://t.me/Shamshiyev_O" target="_blank">
                 <TelegramIcon />
               </a>
-              <a href="https://www.youtube.com/channel/UC_ezZnLBpv3uf2qyoD5hgOA" target="_blank">
+              <a
+                href="https://www.youtube.com/channel/UC_ezZnLBpv3uf2qyoD5hgOA"
+                target="_blank"
+              >
                 <YouTubeIcon />
               </a>
               <a href="https://www.instagram.com/shamshiyev_o" target="_blank">
@@ -43,8 +58,8 @@ const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
               </a>
             </div>
           </ul>
-      </header>
-        </Header_link>
+        </header>
+      </HeaderLInk>
     </Container>
   );
 };
