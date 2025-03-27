@@ -44,16 +44,25 @@ const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
             </li>
 
             <div className="header_imgs">
-              <a href="https://t.me/Shamshiyev_O" target="_blank">
+              <a
+                href="https://t.me/Shamshiyev_O"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <TelegramIcon />
               </a>
               <a
                 href="https://www.youtube.com/channel/UC_ezZnLBpv3uf2qyoD5hgOA"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <YouTubeIcon />
               </a>
-              <a href="https://www.instagram.com/shamshiyev_o" target="_blank">
+              <a
+                href="https://www.instagram.com/shamshiyev_o"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <InstagramIcon />
               </a>
             </div>
