@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const HeaderLInk = styled.div`
+export const HeaderLink = styled.div`
 max-width: 1480px;
 width: 100%;
 position: fixed;
