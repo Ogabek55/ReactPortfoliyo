@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { HeaderLInk } from "./header";
+import { HeaderLink } from "./header";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -12,7 +12,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
   return (
     <Container maxWidth="xl">
-      <HeaderLInk>
+      <HeaderLink>
         <header>
           <ul>
             <li className="header_home" onClick={() => scrollToContent("home")}>
@@ -68,7 +68,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToContent }) => {
             </div>
           </ul>
         </header>
-      </HeaderLInk>
+      </HeaderLink>
     </Container>
   );
 };
