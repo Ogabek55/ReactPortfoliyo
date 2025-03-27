@@ -12,7 +12,7 @@ import CompyuterImg1 from "./images/CompyuterImg1.png";
 import CompyuterImg2 from "./images/CompyuterImg2.png";
 import FloatingActionButtons from "../Add";
 import Form from "../Form";
-import { ForwardedRef, forwardRef, MutableRefObject } from "react";
+import { forwardRef, MutableRefObject } from "react";
 
 interface MainProps {
   homeRef: MutableRefObject<HTMLDivElement | null>;
@@ -194,7 +194,6 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontFamily: "Raleway",
                         lineHeight: "24px",
                         padding: "10px",
-                        // textAlign: "center",
                       }}
                     >
                       The purpose of this site is to allow students to test
