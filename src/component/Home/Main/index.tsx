@@ -4,7 +4,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Footerr from "../Footer/";
 import Information_fintech_img from "./images/myschool-img.jpg";
 import Information_fintech_img1 from "./images/Queezy-dashboard-img1.jpg";
-import Information_fintech_img2 from "./images/Queezy-dashboard-img2.jpg";
+import Information_fintech_img2 from "./images/Queezy-dashboard-img2.png";
 import { CaseStudies, MAinText, MyImg } from "./main";
 import { Container, Typography } from "@mui/material";
 import CartComponent from "../CartComponent";
@@ -13,6 +13,16 @@ import CompyuterImg2 from "./images/CompyuterImg2.png";
 import FloatingActionButtons from "../Add";
 import Form from "../Form";
 import { forwardRef, MutableRefObject } from "react";
+
+function MySchool() {
+  window.location.href = "https://myschool41.netlify.app/";
+}
+function LoginQueezy() {
+  window.location.href = "https://queezydashboard.netlify.app/";
+}
+function NewPasword() {
+  window.location.href = "https://loginenter.netlify.app/";
+}
 
 interface MainProps {
   homeRef: MutableRefObject<HTMLDivElement | null>;
@@ -49,6 +59,12 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       width: "307px",
                       height: "63px",
                       marginTop: "30px",
+                      "@media (max-width: 600px)": {
+                        width: "220px",
+                        height: "50px",
+
+                        marginBottom: "50px",
+                      },
                     }}
                   >
                     Let’s get started <ChevronRightIcon />
@@ -57,8 +73,10 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                 </div>
               </MAinText>
               <MyImg>
-                <div className="Main_img">
-                  <img className="Main_img_img" src={MainImgPerson} alt="" />
+                <div className="container_img">
+                  <div className="Main_img">
+                    <img className="Main_img_img" src={MainImgPerson} alt="" />
+                  </div>
                 </div>
               </MyImg>
             </main>
@@ -104,6 +122,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontWeight: "bold",
                         borderRadius: "27px",
                         marginLeft: "10px",
+                        "@media (max-width: 600px)": {
+                          display: "none",
+                        },
                       }}
                     >
                       Fintech
@@ -127,6 +148,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontFamily: "Raleway",
                         lineHeight: "24px",
                         padding: "10px",
+                        "@media (max-width: 600px)": {
+                          textAlign: "center",
+                        },
                       }}
                     >
                       The purpose of this site is to further improve
@@ -135,18 +159,21 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       school is stored here.
                     </Typography>
 
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background: "#FFA217",
-                        width: "195px",
-                        height: "38px",
-                        padding: "10px",
-                      }}
-                    >
-                      View case study
-                      <ChevronRightIcon />
-                    </Button>
+                    <div className="button_container">
+                      <Button
+                        variant="contained"
+                        onClick={MySchool}
+                        sx={{
+                          background: "#FFA217",
+                          width: "195px",
+                          height: "38px",
+                          padding: "10px",
+                        }}
+                      >
+                        View case study
+                        <ChevronRightIcon />
+                      </Button>
+                    </div>
                   </div>
 
                   <div className="information_fintech_imgs">
@@ -180,6 +207,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontWeight: "bold",
                         borderRadius: "27px",
                         marginLeft: "10px",
+                        "@media (max-width: 600px)": {
+                          display: "none",
+                        },
                       }}
                     >
                       Fintech
@@ -194,6 +224,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontFamily: "Raleway",
                         lineHeight: "24px",
                         padding: "10px",
+                        "@media (max-width: 600px)": {
+                          textAlign: "center",
+                        },
                       }}
                     >
                       The purpose of this site is to allow students to test
@@ -211,18 +244,21 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                     >
                       Electronic exam website, i.e. Queezy-Dashboard
                     </Typography>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background: "#000AFF",
-                        width: "195px",
-                        height: "38px",
-                        padding: "10px",
-                      }}
-                    >
-                      View case study
-                      <ChevronRightIcon />
-                    </Button>
+                    <div className="button_container">
+                      <Button
+                        variant="contained"
+                        onClick={LoginQueezy}
+                        sx={{
+                          background: "#000AFF",
+                          width: "195px",
+                          height: "38px",
+                          padding: "10px",
+                        }}
+                      >
+                        View case study
+                        <ChevronRightIcon />
+                      </Button>
+                    </div>
                   </div>
                 </div>
                 <div className="information_fintech">
@@ -239,6 +275,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontWeight: "bold",
                         borderRadius: "27px",
                         marginLeft: "10px",
+                        "@media (max-width: 600px)": {
+                          display: "none",
+                        },
                       }}
                     >
                       Fintech
@@ -262,6 +301,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                         fontFamily: "Raleway",
                         lineHeight: "24px",
                         padding: "10px",
+                        "@media (max-width: 600px)": {
+                          textAlign: "center",
+                        },
                       }}
                     >
                       Here, when a reader registers and logs in again, they can
@@ -269,18 +311,22 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       for wider use of this site.
                     </Typography>
 
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background: "#2AB090",
-                        width: "195px",
-                        height: "38px",
-                        padding: "10px",
-                      }}
-                    >
-                      View case study
-                      <ChevronRightIcon />
-                    </Button>
+                    <div className="button_container">
+                      {" "}
+                      <Button
+                        variant="contained"
+                        onClick={NewPasword}
+                        sx={{
+                          background: "#2AB090",
+                          width: "195px",
+                          height: "38px",
+                          padding: "10px",
+                        }}
+                      >
+                        View case study
+                        <ChevronRightIcon />
+                      </Button>
+                    </div>
                   </div>
                   <div className="information_fintech_imgs">
                     <img
@@ -303,6 +349,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                   justifyContent: "center",
                   color: "white",
                   padding: "130px 0px 0px 0px",
+                  "@media (max-width: 500px)": {
+                    fontSize: "34px",
+                  },
                 }}
               >
                 Testimonials
@@ -347,14 +396,12 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
               <Typography
                 variant="subtitle1"
                 sx={{
-                  maxWidth: "800px",
                   width: "100%",
                   display: "flex",
                   justifyContent: "center",
                   color: "#9C9C9C",
                   lineHeight: "24px",
                   textAlign: "center",
-                  padding: "0px 0px 0px 300px",
                 }}
               >
                 I have been working on solving user-generated problems for the
@@ -448,6 +495,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       fontSize: "34px",
                       fontWeight: "bold",
                       textAlign: "center",
+                      "@media (max-width: 500px)": {
+                        fontSize: "26px",
+                      },
                     }}
                   >
                     Get In Touch
@@ -457,6 +507,9 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       color: "#9C9C9C",
                       lineHeight: "24px",
                       textAlign: "center",
+                      "@media (max-width: 500px)": {
+                        fontSize: "14px",
+                      },
                     }}
                   >
                     Those who wish to contact me should fill out the form below.{" "}

@@ -3,7 +3,6 @@ import Button from "@mui/material/Button";
 import { Typography, CircularProgress } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-
 const Main = () => {
   const emailRef = useRef<HTMLInputElement>(null);
   const mobileRef = useRef<HTMLInputElement>(null);
@@ -143,6 +142,10 @@ const Main = () => {
             marginTop: "30px",
             fontWeight: "bold",
             borderRadius: "4px",
+            "@media (max-width: 500px)": {
+              width: "300px",
+              height: "40px",
+            },
           }}
           type="submit"
           disabled={loading}

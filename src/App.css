@@ -237,9 +237,28 @@ footer {
   display: block;
   text-align: center;
  }
- .Main_img_img{
-  margin-top: 20px;
- }
+
+.Main_div_p{
+  display: none;
+}
+.Main_text_h1{
+  text-align: center;
+  font-size: 36px;
+}
+.information_fintech_img{
+  max-width: 400px;
+  max-height: 300px;
+}
+.button_container{
+  text-align: center;
+  padding: 15px;
+}
+}
+@media screen and (max-width:530px) {
+.Testimonials_information_carts{
+  display: block;
+  padding: 20px;
+}
 }
 @media screen and (max-width: 491px) {
   .header_recent {
@@ -249,12 +268,7 @@ footer {
     text-align: center;
   }
 }
-/* @media screen and (max-width:590px) {
-  .main{
-    display: block;
-    margin: 0 auto;
-  }
-} */
+
 @media screen and (max-width: 478px) {
   .carts1_img,
   .information_fintech_img1 {
@@ -263,8 +277,11 @@ footer {
   }
   .information_fintech_img,
   .information_fintech_img2 {
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 15px;
+  }
+  .information_fintech_imgs{
+    text-align: center;
   }
   .footer {
     max-width: 60%;
@@ -276,5 +293,13 @@ footer {
     max-width: 60%;
     margin: 0 auto;
    
+  }
+  .Testimonials_information_footer{
+    max-width:390px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer_from_input, #footer_from_input, .footer_from_input_message{
+width: 300px;
   }
 }
