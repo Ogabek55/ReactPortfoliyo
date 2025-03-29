@@ -23,6 +23,14 @@ function LoginQueezy() {
 function NewPasword() {
   window.location.href = "https://loginenter.netlify.app/";
 }
+function SiteOptimization() {
+  window.location.href =
+    "https://www.navicosoft.com/website-speed-optimization/?gad_source=1&gclid=Cj0KCQjwkZm_BhDrARIsAAEbX1E8N5uKcCekoXLLcUhspGy2iKdzWJ8MxMw75U5rG5mpyFtHJ9QrmY4aApl2EALw_wcBF";
+}
+function CodeCreating() {
+  window.location.href =
+    "https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide";
+}
 
 interface MainProps {
   homeRef: MutableRefObject<HTMLDivElement | null>;
@@ -179,7 +187,7 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                   <div className="information_fintech_imgs">
                     <img
                       className="information_fintech_img"
-                      style={{ width: "445px", height: "320px" }}
+                      style={{ width: "445px", height: "270px" }}
                       src={Information_fintech_img}
                       alt=""
                     />
@@ -188,7 +196,7 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                 <div className="information_fintech">
                   <div className="information_fintech_imgs">
                     <img
-                      style={{ width: "445px", height: "320px" }}
+                      style={{ width: "445px", height: "270px" }}
                       className="information_fintech_img"
                       src={Information_fintech_img1}
                       alt=""
@@ -330,8 +338,7 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                   </div>
                   <div className="information_fintech_imgs">
                     <img
-                      style={{ width: "445px", height: "512px" }}
-                      className="information_fintech_img2"
+                      className="information_fintech_img_img2"
                       src={Information_fintech_img2}
                       alt=""
                     />
@@ -365,6 +372,7 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                   padding: "10px 0px 0px 0px",
                   lineHeight: "24px",
                   letterSpacing: "1px",
+                  textAlign: "center",
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
@@ -421,20 +429,25 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       padding: "10px 0px",
                     }}
                   >
-                    Work name here
+                    Site optimization
                   </Typography>
                   <Typography
                     variant="subtitle2"
                     sx={{
                       color: "#9C9C9C",
                       lineHeight: "24px",
+                      maxWidth: "500px",
                     }}
                   >
-                    Labore et dolore magna aliqua. sed do eiusmod <br /> tempor
-                    incididunt ut labore et dolore magna.
+                    I am working on previously created websites, that is, to
+                    improve them further. The goal is to create comprehensive
+                    convenience for users. The created website should be used
+                    primarily in the way the creator intended. The appearance of
+                    the website also decides a lot
                   </Typography>
                   <Button
                     variant="contained"
+                    onClick={SiteOptimization}
                     sx={{
                       background: "#62BA1B",
                       width: "150px",
@@ -456,19 +469,24 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                       padding: "10px 0px",
                     }}
                   >
-                    Work name here
+                    Improve site creation
                   </Typography>
                   <Typography
                     sx={{
                       color: "#9C9C9C",
                       lineHeight: "24px",
+                      maxWidth: "500px",
                     }}
                   >
-                    Labore et dolore magna aliqua. sed do eiusmod <br /> tempor
-                    incididunt ut labore et dolore magna.
+                    Improving website code largely depends on the way it is
+                    written. It's not about how much or how little code is
+                    written, but about its functionality, consistency, speed,
+                    and quality. That is, how easy it is for a programmer other
+                    than the person who wrote the site to read.
                   </Typography>
                   <Button
                     variant="contained"
+                    onClick={CodeCreating}
                     sx={{
                       background: "#62BA1B",
                       width: "150px",

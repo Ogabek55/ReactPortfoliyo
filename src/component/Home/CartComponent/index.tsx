@@ -28,32 +28,29 @@ function TestimonialCard() {
         },
       }}
     >
-    
       <Typography
         sx={{
           fontSize: "40px",
           lineHeight: "1",
           fontWeight: "bold",
           mb: 2,
-          color:"white"
+          color: "white",
         }}
       >
         &ldquo;
       </Typography>
 
-    
       <Typography
         sx={{
           fontSize: "16px",
           lineHeight: "1.6",
           mb: 3,
-          color:"#9C9C9C"
+          color: "#9C9C9C",
         }}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </Typography>
-
 
       <Box display="flex" alignItems="center">
         <Avatar
@@ -65,7 +62,7 @@ function TestimonialCard() {
           sx={{
             fontSize: "16px",
             fontWeight: "bold",
-            color:"#FFFFFF"
+            color: "#FFFFFF",
           }}
         >
           Elyor Tuyliyev
@@ -76,3 +73,16 @@ function TestimonialCard() {
 }
 
 export default TestimonialCard;
+
+const db = {
+  users: [
+    // ...
+  ],
+  products: [
+    {
+      id: "id1",
+      name: "fda",
+    },
+    // ...
+  ],
+};

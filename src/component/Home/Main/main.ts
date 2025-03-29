@@ -29,10 +29,12 @@ export const MyImg = styled.div`
     box-shadow: 0 0 50px #3F8E00;
   }
  
+ 
 `;
 
 export const MAinText = styled.div`
   .Main_div_p {
     cursor: pointer;
   }
+  
 `;
