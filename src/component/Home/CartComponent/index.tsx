@@ -73,16 +73,3 @@ function TestimonialCard() {
 }
 
 export default TestimonialCard;
-
-const db = {
-  users: [
-    // ...
-  ],
-  products: [
-    {
-      id: "id1",
-      name: "fda",
-    },
-    // ...
-  ],
-};
