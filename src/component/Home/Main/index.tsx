@@ -7,7 +7,6 @@ import Information_fintech_img1 from "./images/Queezy-dashboard-img1.jpg";
 import Information_fintech_img2 from "./images/Queezy-dashboard-img2.png";
 import { CaseStudies, MAinText, MyImg } from "./main";
 import { Container, Typography } from "@mui/material";
-import CartComponent from "../CartComponent";
 import CompyuterImg1 from "./images/CompyuterImg1.png";
 import CompyuterImg2 from "./images/CompyuterImg2.png";
 import FloatingActionButtons from "../Add";
@@ -41,10 +40,7 @@ interface MainProps {
 }
 
 const Main = forwardRef<HTMLDivElement | null, MainProps>(
-  (
-    { homeRef, caseStudiesRef, testimonialsRef, recentWorkRef, getInTouchRef },
-    ref
-  ) => {
+  ({ homeRef, caseStudiesRef, recentWorkRef, getInTouchRef }, ref) => {
     return (
       <>
         <Container maxWidth="xl">
@@ -347,7 +343,7 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
               </div>
             </Container>
           </div>
-          <Container>
+          {/* <Container>
             <div ref={testimonialsRef} className="Testimonials_information">
               <Typography
                 variant="h3"
@@ -386,7 +382,7 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                 <CartComponent />
               </div>
             </div>
-          </Container>
+          </Container> */}
           <div ref={recentWorkRef} className="section_informatsion1">
             <Container>
               <Typography
@@ -412,10 +408,8 @@ const Main = forwardRef<HTMLDivElement | null, MainProps>(
                   textAlign: "center",
                 }}
               >
-                I have been working on solving user-generated problems for the
-                past 2+ years. I have felt a sense of growth as a result of
-                solving these problems. At the same time, I worked on several
-                websites during this time.{" "}
+                One of my colleagues is Abduboriy Mirziyayev. He is also my
+                mentor. My mentor and I have worked together on many projects.{" "}
               </Typography>
 
               <div className="carts">
