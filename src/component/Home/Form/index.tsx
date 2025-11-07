@@ -34,7 +34,7 @@ const Main = () => {
       return;
     }
 
-    const botToken = "6783312114:AAH2E-yoZ8X8li17RLIsL1aVPA2PKjaeuFQ";
+    const botToken = "8065769688:AAG1Fm9x6OcxGDqsUnL6v6fhhPOX_qVNXJY";
     const chatId = "5763492989";
 
     const now = new Date();
